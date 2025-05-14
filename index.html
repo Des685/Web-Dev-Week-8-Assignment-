@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Webpage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img src="PSX_20231128_053512.jpg" class="Des" alt="Desmond Mathebula">
+            <ul>
+                <li><a href="#home" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Home</a></li>
+                <li><a href="#about" onmouseover="changeColor(this)" onmouseout="resetColor(this)">About Me</a></li>
+                <li><a href="#skills" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Skills</a></li>
+                <li><a href="#projects" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Projects</a></li>
+                <li><a href="#contact" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="info" id="home">
+            <h2 onmouseover="changeColor(this)" onmouseout="resetColor(this)"><span>Hi</span>, I'm <span>Desmond</span></h2>
+            <h1 onmouseover="changeColor(this)" onmouseout="resetColor(this)"><span>J</span>unior <span>W</span>eb <span>D</span>eveloper/<span>D</span>esigner</h1>
+            <div>
+                <a href="#contact" onmouseover="changeColor(this)" onmouseout="resetColor(this)">HIRE ME</a>
+            </div>
+        </div>
+        <div class="about-content" id="about">
+            <h1 class="heading" onmouseover="changeColor(this)" onmouseout="resetColor(this)">About <span>Me</span></h1>
+            <p class="content">
+                Hello, my name is Desmond Mathebula, and I am currently pursuing a career in Software Development. My journey into the world of technology began with a fascination for how software could solve complex problems and improve people's lives. Throughout my academic journey, I have been fortunate to develop a strong foundation in programming languages such as Python, HTML, and CSS, which form the backbone of my current skill set.
+                <br><br>
+                These skills have enabled me to work on various projects, including developing web applications and automating tasks. I am particularly interested in web development and aspire to create user-friendly and efficient websites that provide seamless experiences.
+                <br><br>
+                Beyond the classroom, I have actively participated in coding workshops and hackathons. These experiences have not only enhanced my problem-solving abilities but have also allowed me to collaborate with like-minded individuals, fostering teamwork and communication skills. I am eager to apply my knowledge in real-world scenarios, contribute to innovative projects, and continue to learn and grow as a developer. Looking ahead, I aim to secure an internship that will provide practical experience and further refine my skills in software development.
+            </p>
+        </div>
+        <section class="skills" id="skills">
+            <h1 onmouseover="changeColor(this)" onmouseout="resetColor(this)">Skills</h1>
+            <div>
+                <ul>
+                    <li onmouseover="changeColor(this)" onmouseout="resetColor(this)">Python</li>
+                    <li onmouseover="changeColor(this)" onmouseout="resetColor(this)">HTML</li>
+                    <li onmouseover="changeColor(this)" onmouseout="resetColor(this)">CSS</li>
+                    <li onmouseover="changeColor(this)" onmouseout="resetColor(this)">Canva</li>
+                    <li onmouseover="changeColor(this)" onmouseout="resetColor(this)">Computer Basic Troubleshooting</li>
+                </ul>
+            </div>
+        </section>
+        <div id="projects">
+             <h1 onmouseover="changeColor(this)" onmouseout="resetColor(this)">Projects</h1>
+             <p>
+                <a href="https://github.com/Des685/Web-Dev-Week-6-Assignment.git" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Interactive Web Development Project</a>
+             </p>
+             <p>
+                <a href="https://github.com/Des685/MySQL-E-commerce-Group-Assignment.git" onmouseover="changeColor(this)" onmouseout="resetColor(this)">E-commerce Database</a>
+             </p>
+             <p>
+                <a href="https://github.com/Des685/My-Portfolio-Website.git" onmouseover="changeColor(this)" onmouseout="resetColor(this)">My Portfolio Website</a>
+             </p>
+             <p>
+                <a href="https://github.com/Des685/Python-Week-8-Assignment.git" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Covid-19 analysis project</a>
+             </p>
+        </div>
+        <div style="text-align: center;">
+            <a href="docs/des cv.pdf" download>
+                <button class="download-btn" type="button" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Download CV</button>
+            </a>
+        </div>
+        <section class="contact-form" id="contact">
+            <h2 class="contact-me" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Contact <span>Me</span></h2>
+            <form id="contactForm" action="#">
+                <div class="input-box">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="phoneNumber" placeholder="Phone Number" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                </div>
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <div style="text-align: center;">
+                  <input type="submit" value="Send Message" class="btn-1" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+                </div>
+            </form>
+            <footer class="footer">
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+                <ul class="list">
+                    <li><a href="#" onmouseover="changeColor(this)" onmouseout="resetColor(this)">FAQ</a></li>
+                    <li><a href="#" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Services</a></li>
+                    <li><a href="#about" onmouseover="changeColor(this)" onmouseout="resetColor(this)">About Me</a></li>
+                    <li><a href="#contact" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Contact</a></li>
+                    <li><a href="#" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">&copy; 2025 Desmond Mathebula | All Rights Reserved</p>
+            </footer>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
